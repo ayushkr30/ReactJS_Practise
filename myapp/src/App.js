@@ -1,18 +1,16 @@
 import Add from "./components/Add";
+import User from "./components/User";
+
 
 function App() {
-  const myName = 'Ayush Kumar';
-  const multiply = (a,b) => a*b;
-  const specialClass = 'simple-class';
-
   return (
-    <>
-   <h1>{myName}</h1>
-   <p>2 * 2 = {2*2}</p>
-  <p>My Friends list: {["Alex" , "John" ,"Jordan"]}</p>
-    
-    
-    </>
+    <User
+    img="https://avatars.githubusercontent.com/u/85052811?v=4"
+    name="AyushKumar"
+    age={23}
+    isMarried={false}
+    hobbies={[ "Coding", "Reading", "Sleeping"]}
+    />
   );
 }
 
